@@ -1,0 +1,27 @@
+
+menu.cpu=Processor
+
+################################################################################
+################################### VEX Cortex #################################
+################################################################################
+Cortex.name=VEX Cortex
+
+Cortex.upload.tool=avrdude
+Cortex.upload.protocol=arduino
+Cortex.upload.maximum_size=32256
+Cortex.upload.maximum_data_size=2048
+Cortex.upload.speed=115200
+
+Cortex.bootloader.tool=avrdude
+Cortex.bootloader.low_fuses=0xFF
+Cortex.bootloader.high_fuses=0xDE
+Cortex.bootloader.extended_fuses=0x05
+Cortex.bootloader.unlock_bits=0x3F
+Cortex.bootloader.lock_bits=0x0F
+Cortex.bootloader.file=Cortex/cortex.hex
+
+Cortex.build.mcu=atmega328p
+Cortex.build.f_cpu=16000000L
+Cortex.build.board=ARM
+Cortex.build.core=arduino:arduino
+Cortex.build.variant=arduino:standard
